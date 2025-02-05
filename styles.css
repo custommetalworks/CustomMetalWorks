@@ -1,0 +1,39 @@
+a.nav-link.active {
+    color: #164870 !important;
+}
+
+footer .bi {
+    color: white;
+    fill: currentColor;
+}
+
+footer.bg-footer {
+    background-color: #343a40;
+}
+
+.navbar-brand img {
+    height: 48px;
+}
+
+@media (max-width: 400px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+        white-space: nowrap;
+        margin-right: 10px;
+    }
+    .navbar-brand img {
+        height: 36px;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+    }
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}

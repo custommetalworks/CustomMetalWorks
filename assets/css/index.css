@@ -1,0 +1,17 @@
+.carousel-text-bg {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#carouselFade .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#services img {
+    height: 80px;
+}

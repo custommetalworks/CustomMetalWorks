@@ -1,0 +1,22 @@
+.card-img-top {
+    object-fit:cover;
+}
+
+.modal-dialog {
+    max-width: max-content !important;
+}
+
+.modal-body {
+    display: flex;
+}
+
+.modal-body img {
+    object-fit: contain;
+    max-height: 85vh;
+}
+
+#portfolio-banner {
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
