@@ -1,0 +1,35 @@
+#iframe {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Minimal height */
+    display: flex;
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    background-color: #f8f9fa;
+}
+
+#spinner {
+    position: absolute;
+    z-index: 10; /* Priority */
+}
+
+.spinner-grow {
+    width: 3rem;
+    height: 3rem;
+    color: #343a40;
+}
+
+#iframe-map {
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: opacity 100ms ease-in-out;
+}
+
+@media (min-width: 1080px) {
+    #iframe {
+        height: 60vh;
+    }
+}

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Realizacje</title>
+
+    <meta name="description" content="Zobacz nasze realizacje: maszyny, konstrukcje stalowe, szafy sterownicze.">
+
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="assets/css/portfolio.css" rel="stylesheet">
+
+    <script defer src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/js/portfolio.js"></script>
+
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="Custom Metal Works"/>
+    <link rel="manifest" href="site.webmanifest"/>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg px-3 py-2">
+        <div class="container">
+            <a class="navbar-brand text-dark text-decoration-none" href="/">
+                <img src="assets/images/logo/logo.webp" alt="Logo" class="d-inline-block">
+                Custom Metal Works
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-md-end" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/">
+                        <svg class="bi mx-sm-auto me-1 me-sm-0 mb-2 mb-md-1" width="24" height="24">
+                            <use xlink:href="assets/svg/svg.svg#home"></use>
+                        </svg>
+                        Strona główna
+                    </a>
+                    <a class="nav-link" aria-current="page" href="o-firmie.html">
+                        <svg class="bi mx-sm-auto me-1 me-sm-0 mb-2 mb-md-1" width="24" height="24">
+                            <use xlink:href="assets/svg/svg.svg#grid"></use>
+                        </svg>
+                        O firmie
+                    </a>
+                    <a class="nav-link active" href="realizacje.html">
+                        <svg class="bi mx-sm-auto me-1 me-sm-0 mb-2 mb-md-1" width="24" height="24">
+                            <use xlink:href="assets/svg/svg.svg#work"></use>
+                        </svg>
+                        Realizacje
+                    </a>
+                    <a class="nav-link" href="kontakt.html">
+                        <svg class="bi mx-sm-auto me-1 me-sm-0 mb-2 mb-md-1" width="24" height="24">
+                            <use xlink:href="assets/svg/svg.svg#contact"></use>
+                        </svg>
+                        Kontakt
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid p-0">
+    <div class="flex-row">
+        <div class="col-auto position-relative">
+            <img src="assets/images/index/1.webp" class="d-block w-100" alt="Contact Image" id="portfolio-banner">
+            <div class="position-absolute top-50 translate-middle-y text-light ps-5">
+                <h3>Realizacje</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid my-4">
+    <div class="row">
+        <div class="text-center">
+            <h3>Nasze Realizacje</h3>
+        </div>
+    </div>
+</div>
+<div class="border-top my-4"></div>
+
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card shadow">
+                <div class="ratio ratio-1x1" onclick="openModal(this)">
+                    <img src="assets/images/portfolio/thumbnails/schody.webp" class="card-img-top" data-large="assets/images/portfolio/schody.webp" alt="Schody metalowe">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Schody metalowe</h5>
+                    <p class="card-text">Schody metalowe dla szkoły.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalTitle"> </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Large" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="border-top my-4"></div>
+
+<footer class="bg-footer text-light py-4" aria-label="Stopka z danymi kontaktowymi, informacjami o firmie oraz linkami do social media.">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 aria-label="Dane Firmy">Dane firmy</h5>
+                <ul class="list-unstyled" aria-label="Dane firmy">
+                    <li><strong>NIP:</strong> 6682016532</li>
+                    <li><strong>REGON:</strong> 540320293</li>
+                    <li><strong>Adres:</strong> Kaczki Średnie 24, 62-700 Turek</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5 aria-label="Kontakt">Kontakt</h5>
+                <ul class="list-unstyled" aria-label="Dane kontaktowe">
+                    <li><strong>Telefon:</strong> <a href="tel:+48884307728" class="text-light">+48 884 307 728</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:info@custommetalworks.pl" class="text-light">info@custommetalworks.pl</a>
+                </ul>
+            </div>
+
+            <div class="col-md-4 bg">
+                <h5 aria-label="Social Media">Znajdź nas</h5>
+                <ul class="list-unstyled d-flex" aria-label="Lista linków do Social Media">
+                    <li class="me-3">
+                        <a href="https://www.instagram.com/custom.metal.works/" target="_blank" class="text-dark" aria-label="Strona na Instagramie">
+                            <svg class="bi" width="24" height="24" aria-hidden="true">
+                                <use xlink:href="assets/svg/svg.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-top"></div>
+        <div class="text-center mt-4">
+            <small>© 2025 Custom Metal Works. Wszelkie prawa zastrzeżone.</small>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
